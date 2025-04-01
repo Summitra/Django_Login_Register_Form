@@ -1,0 +1,9 @@
+{% extends 'layouts/app.html' %}
+
+{% block content %}
+
+<h1 class="mt-5 mb-4 text-center" style="color:deeppink">Dashboard</h1>
+<h2 style="color:#9400D3" class="text-center mt-5">Logged In User is : {{ request.user.username}}</h2>
+<a href="{% url 'logout' %}" class="btn btn-dark mt-5" style="margin-left:600px">Logout</a>
+
+{% endblock %}
